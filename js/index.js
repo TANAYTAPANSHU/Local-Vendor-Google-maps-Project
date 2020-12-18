@@ -162,6 +162,7 @@
             <div class="store-container-background">
                 <div class="store-info-container">
                     <div class="store-address">
+                      <span><b> ${store.storeName}</b> </span>
                         <span>${store.addressLines[0]}</span>
                         <span>${store.addressLines[1]}</span>
                     </div>
