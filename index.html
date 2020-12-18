@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Map</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFURETwuQ71FmExFaFCa7SBp4oqAgiiE8&callback=initMap&libraries=&v=weekly" defer></script>
+    <style type="text/css">
+        /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+        
+        #map {
+            height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        
+        html,
+        body {
+            height: 200vh;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="title">Store Locator</div>
+    <div class="search-container" style="
+    display: flex;
+    align-items: center;">
+        <input id="zip-code" type="text" onkeyup="onEnter()" placeholder="Enter the zip code" />
+        <i class="fas fa-search" onclick="getStores()"></i>
+    </div>
+
+    <div class="stores-list-container">
+        <div class="stores-list">
+            <div class="intro">
+                <span class="enter-zip">Enter zip code</span>
+                <span class="find-stores">Find stores near you</span>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <div id="map"></div>
+
+</body>
+
+</html>
